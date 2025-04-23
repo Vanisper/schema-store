@@ -1,0 +1,27 @@
+{
+  "name": "schema-store",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "preinstall": "bunx only-allow bun",
+    "prepare": "bunx lefthook install"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "commitizen": "^4.3.1",
+    "cz-git": "^1.11.1",
+    "lefthook": "^1.11.11"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-git"
+    }
+  }
+}
